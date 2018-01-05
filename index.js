@@ -26,6 +26,10 @@ router.post('/processpay', function (request, response){
 	})
 })
 
+router.get('/test', function(request, response){
+		response.send('Welcome to this API');
+	});
+
 app.use(router);
 app.listen(process.env.PORT || 3000, function() {
 	console.log('Server started');
